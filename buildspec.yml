@@ -1,0 +1,6 @@
+version: 0.2
+phases:
+
+  build:
+    commands:
+      - aws lambda update-function-code --function-name LF2-search-photos --region us-west-2 --zip-file fileb://lambda-search-package.zip
